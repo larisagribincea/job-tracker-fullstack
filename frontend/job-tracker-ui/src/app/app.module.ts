@@ -12,7 +12,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { JobEffects } from './store/job.effects';
 import { StoreModule } from '@ngrx/store';
 import { jobsReducer } from './store/job.reducer';
-import { HttpClient } from '@angular/common/http';  
 import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
