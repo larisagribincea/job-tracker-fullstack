@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Job } from '../store/job.model';
-import { Observable } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Job } from "../store/job.model";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +13,9 @@ export class JobService {
 
   getJobs(): Observable<Job[]> {
     return this.http.get<Job[]>(this.apiUrl);
+  }
+
+  deleteJob(jobId: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${jobId}`);
   }
 }

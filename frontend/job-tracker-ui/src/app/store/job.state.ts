@@ -1,4 +1,4 @@
-import { Job } from './job.model';
+import { Job } from "./job.model";
 
 export interface JobsState {
   jobs: Job[];

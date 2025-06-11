@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { JobListComponent } from './job-list/job-list.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { JobListComponent } from "./job-list/job-list.component";
 
-const routes: Routes = [{ path: '', component: JobListComponent }];
+const routes: Routes = [{ path: "", component: JobListComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

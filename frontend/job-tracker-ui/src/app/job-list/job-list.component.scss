@@ -1,4 +1,77 @@
 .job-table {
-    width: 100%;
-    padding: 30px;
+  width: 100%;
+  padding: 30px;
+  .main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px;
+
+    .buttons-container {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 100%;
+
+      .search-container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .search-input {
+        flex: 1;
+      }
+
+      .main-button {
+        height: 56px;
+        width: 150px;
+      }
+
+      .add {
+        background-color: #673bb7;
+        color: #fff;
+      }
+    }
+  }
+
+  .status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    min-width: 100px;
+    margin-top: 11px;
+  }
+
+  .status-rejected {
+    background-color: #ff4d4d;
+  }
+
+  .status-applied {
+    background-color: #4caf50;
+  }
+
+  .status-interview {
+    background-color: #ff9800;
+  }
+
+  .status-offer {
+    background-color: #2196f3;
+  }
+
+  .status-hired {
+    background-color: #009688;
+  }
+
+  .status-noresponse {
+    background-color: #9e9e9e;
+  }
+
+  .status-pending {
+    background-color: #ffc107;
+  }
+
 }
